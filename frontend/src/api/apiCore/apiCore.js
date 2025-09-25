@@ -4,7 +4,7 @@ import axios from "axios";
 
 // Create Axios instance
 const api = axios.create({
-  baseURL: "http://localhost:8001",
+  baseURL: "https://hr-3yr6.onrender.com",
   // baseURL: "https://mern-backend-zocv.onrender.com",
   timeout: 10000,
   headers: {
