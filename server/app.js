@@ -15,6 +15,8 @@ const app = express();
 app.use(
   cors({
     origin: [
+     "hr-blond.vercel.app",
+
       "http://localhost:5173",
       "https://fanciful-toffee-5ef34c.netlify.app",
       "https://musical-gecko-91effd.netlify.app",
@@ -52,3 +54,4 @@ mongoose
 
 const PORT = process.env.PORT || 8001;
 app.listen(PORT, () => console.log(`Server running on port ${PORT}`));
+
