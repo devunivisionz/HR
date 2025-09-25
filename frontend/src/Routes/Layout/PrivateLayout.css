@@ -1,0 +1,23 @@
+.layout-container {
+  display: flex;
+  min-height: 100vh;
+}
+
+.sidebar-container {
+  /* Sidebar styles handled inside Sidebar component */
+}
+
+.main-content {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.navbar-container {
+  /* Add any navbar styles here if needed */
+}
+
+.outlet-container {
+  padding: 24px; /* same as MUI p:3 (3 * 8px = 24px) */
+  flex-grow: 1;
+}

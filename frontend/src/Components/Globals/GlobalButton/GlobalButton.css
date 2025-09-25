@@ -1,0 +1,13 @@
+.global-button {
+  background: #4d007d;
+  color: white;
+  border-radius: 20px;
+  padding: 8px 35px;
+  transition: background 0.3s ease; /* smooth 0.3 seconds transition */
+  border: 1px solid #4d007d;
+}
+
+.global-button:hover {
+  cursor: pointer;
+  background: #6f11a9;
+}

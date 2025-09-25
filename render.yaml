@@ -1,0 +1,27 @@
+services:
+  - type: web
+    name: interview-mern-backend
+    env: node
+    plan: free
+    buildCommand: cd server_2 && npm install
+    startCommand: cd server_2 && npm start
+    envVars:
+      - key: NODE_ENV
+        value: production
+      - key: MONGODB_URI
+        sync: false
+      - key: JWT_SECRET
+        sync: false
+      - key: PORT
+        value: 8001
+
+  - type: web
+    name: interview-mern-frontend
+    env: static
+    plan: free
+    buildCommand: cd frontend && npm install && npm run build
+    staticPublishPath: frontend/dist
+    routes:
+      - type: rewrite
+        source: /*
+        destination: /index.html

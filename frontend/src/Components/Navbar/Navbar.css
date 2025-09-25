@@ -1,0 +1,30 @@
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  /* background-color: #333; */
+  color: black;
+  padding: 10px 20px;
+}
+
+.navbar .heading {
+  font-size: 20px;
+  padding-left: 20px;
+  font-weight: bold;
+}
+.profile-icon {
+  width: 35px;
+  height: 35px;
+  /* background-color: red; */
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.profile-container {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}

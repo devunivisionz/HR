@@ -1,0 +1,104 @@
+.leaves-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: flex-start;
+  /* padding: 20px; */
+  gap: 20px;
+}
+
+/* List - default 75% */
+.leaves-list {
+  flex: 1 1 75%;
+  min-width: 300px;
+}
+
+/* Calendar - default 25% */
+.leaves-calendar {
+  flex: 1 1 25%;
+  min-width: 300px;
+  max-width: 400px;
+}
+
+/* Calendar panel inside calendar */
+/* .calendar-panel {
+  background-color: white;
+  border-radius: 16px;
+  box-shadow: -2px 0 12px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  width: 100%;
+  max-width: 400px;
+  margin: 0 auto;
+} */
+
+/* Media query: when screen < 1100px → stack calendar below */
+@media (max-width: 1100px) {
+  .leaves-list {
+    flex: 1 1 100%;
+  }
+
+  .leaves-calendar {
+    flex: 1 1 100%;
+    max-width: 100%; /* no limit */
+  }
+}
+
+/* Main container */
+.leaves-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-items: flex-start;
+  /* padding: 20px; */
+  gap: 20px;
+}
+
+/* List (default desktop ~75%) */
+.leaves-list {
+  flex: 1 1 700px;
+  min-width: 500px;
+}
+
+/* Calendar (default desktop ~25%) */
+.leaves-calendar {
+  flex: 1 1 350px;
+  min-width: 300px;
+  max-width: 400px;
+}
+
+/* Calendar panel inside calendar */
+.calendar-panel {
+  background-color: white;
+  border-radius: 16px;
+  box-shadow: -2px 0 12px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  width: 100%; /* flexible */
+  max-width: 400px; /* desktop */
+  margin: 0 auto;
+}
+
+@media (max-width: 1100px) {
+  .leaves-list {
+    flex: 1 1 100%;
+  }
+
+  .leaves-calendar {
+    flex: 1 1 100%;
+    max-width: 100%;
+    min-width: 0;
+  }
+
+  .calendar-panel {
+    /* REMOVE this → max-width: 400px; */
+    /* REMOVE this → margin: 0 auto; */
+
+    width: 100%;
+    margin: 0;
+    border-radius: 0; /* optional: looks better full width */
+    box-shadow: none; /* optional: remove side shadow when full width */
+  }
+}

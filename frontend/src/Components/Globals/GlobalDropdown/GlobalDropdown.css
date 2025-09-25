@@ -1,0 +1,37 @@
+.custom-dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.custom-dropdown select {
+  appearance: none;
+  background-color: white;
+  border: 1px solid #ccc;
+  border-radius: 999px;
+  padding: 8px 16px;
+  padding-right: 40px; /* space for icon */
+  font-size: 16px;
+  color: #333;
+  cursor: pointer;
+  outline: none;
+}
+
+.global-dropdown {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 16px;
+  background-color: white;
+  appearance: none;
+  cursor: pointer;
+}
+
+.dropdown-icon {
+  position: absolute;
+  right: 12px;
+  top: 50%;
+  transform: translateY(-50%);
+  pointer-events: none;
+  color: #666;
+}

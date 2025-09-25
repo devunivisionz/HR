@@ -1,0 +1,21 @@
+.filter-section {
+  display: flex;
+  justify-content: space-between; /* left side left, right side right */
+  align-items: center;
+  padding-top: 15px; /* optional */
+  padding-bottom: 15px; /* optional */
+}
+
+.left-side {
+  display: flex;
+  gap: 10px; /* space between dropdowns */
+  justify-content: flex-start; /* left align items */
+  flex: 1; /* takes left space */
+}
+
+.right-side {
+  display: flex;
+  gap: 10px; /* space between button and search */
+  justify-content: flex-end; /* right align items */
+  flex: 1; /* takes right space */
+}
